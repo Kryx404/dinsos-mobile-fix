@@ -19,31 +19,43 @@ import BidangScreen from "./screens/bidang/BidangDetail";
 import UptScreen from "./screens/upt/upt";
 import UptDetail from "./screens/upt-detail/UptDetail";
 import PengaduanScreen from "./screens/pengaduan/pengaduan";
+import IkmScreen from "./screens/ikm/ikm";
+import IkmDetailScreen from "./screens/ikm-detail/IkmDetail";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="MainTabs" component={TabNavigator} />
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Kontak" component={ContactScreen} />
-        <Stack.Screen name="Aplikasi" component={AplicationList} />
-        <Stack.Screen name="Inovasi" component={InnovationScreen} />
-        <Stack.Screen name="Program" component={ProgramScreen} />
-        <Stack.Screen name="Detail-Program" component={ProgramDetailScreen} />
-        <Stack.Screen name="Layanan" component={LayananScreen} />
-        <Stack.Screen name="Detail-Layanan" component={DetailLayananScreen} />
-        <Stack.Screen name="Perizinan" component={PerizinanScreen} />
-        <Stack.Screen name="Detail-Perizinan" component={DetailPerizinanScreen} />
-        <Stack.Screen name="Bidang" component={BidangScreen} />
+    return (
+        <NavigationContainer>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+                <Stack.Screen name="MainTabs" component={TabNavigator} />
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Kontak" component={ContactScreen} />
+                <Stack.Screen name="Aplikasi" component={AplicationList} />
+                <Stack.Screen name="Inovasi" component={InnovationScreen} />
+                <Stack.Screen name="Program" component={ProgramScreen} />
+                <Stack.Screen
+                    name="Detail-Program"
+                    component={ProgramDetailScreen}
+                />
+                <Stack.Screen name="Layanan" component={LayananScreen} />
+                <Stack.Screen
+                    name="Detail-Layanan"
+                    component={DetailLayananScreen}
+                />
+                <Stack.Screen name="Perizinan" component={PerizinanScreen} />
+                <Stack.Screen
+                    name="Detail-Perizinan"
+                    component={DetailPerizinanScreen}
+                />
+                <Stack.Screen name="Bidang" component={BidangScreen} />
+                <Stack.Screen name="IKM" component={IkmScreen} />
+                <Stack.Screen name="IkmDetail" component={IkmDetailScreen} />
 
-        <Stack.Screen name="Upt" component={UptScreen} />
-        <Stack.Screen name="Detail-Upt" component={UptDetail} />
-        <Stack.Screen name="Pengaduan" component={PengaduanScreen} />
-
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+                <Stack.Screen name="Upt" component={UptScreen} />
+                <Stack.Screen name="Detail-Upt" component={UptDetail} />
+                <Stack.Screen name="Pengaduan" component={PengaduanScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }

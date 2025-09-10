@@ -63,6 +63,14 @@ const MenuItemsList = () => {
         },
         {
             id: 8,
+            title: "IKM",
+            icon: (
+                <FontAwesome5 name="chart-bar" size={32} color="gray" />
+            ),
+            onPress: () => navigation.navigate("IKM"),
+        },
+        {
+            id: 9,
             title: "Kontak Kami",
             icon: <FontAwesome name="address-book" size={32} color="gray" />,
             onPress: () => navigation.navigate("Kontak"),
