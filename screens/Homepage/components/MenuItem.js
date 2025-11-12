@@ -71,6 +71,14 @@ const MenuItemsList = () => {
         },
         {
             id: 9,
+            title: "Pelayanan",
+            icon: (
+                <MaterialIcons name="support-agent" size={32} color="gray" />
+            ),
+            onPress: () => navigation.navigate("Pelayanan"),
+        },
+        {
+            id: 10,
             title: "Kontak Kami",
             icon: <FontAwesome name="address-book" size={32} color="gray" />,
             onPress: () => navigation.navigate("Kontak"),

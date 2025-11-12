@@ -21,6 +21,7 @@ import UptDetail from "./screens/upt-detail/UptDetail";
 import PengaduanScreen from "./screens/pengaduan/pengaduan";
 import IkmScreen from "./screens/ikm/ikm";
 import IkmDetailScreen from "./screens/ikm-detail/IkmDetail";
+import PelayananScreen from "./screens/pelayanan/pelayanan";
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +52,7 @@ export default function App() {
                 <Stack.Screen name="Bidang" component={BidangScreen} />
                 <Stack.Screen name="IKM" component={IkmScreen} />
                 <Stack.Screen name="IkmDetail" component={IkmDetailScreen} />
+                <Stack.Screen name="Pelayanan" component={PelayananScreen} />
 
                 <Stack.Screen name="Upt" component={UptScreen} />
                 <Stack.Screen name="Detail-Upt" component={UptDetail} />
